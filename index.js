@@ -306,8 +306,9 @@ async function run() {
     // api to get search users
     app.get("/api/searchUsers", async (req, res) => {
       data = decodeURIComponent(req.query.key);
+      console.log("data", data)
       info = JSON.parse(data);
-      console.log(info);
+      console.log("sreach", info);
       // const query = Object.keys(info).map(key => ({[key]: info[key]}))
       // console.log(query)
       // const filter = {
